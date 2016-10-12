@@ -1,0 +1,19 @@
+.backButton {
+  position: absolute;
+  z-index: 10;
+}
+.slide {
+  height: 100vh;
+  color: '#fff';
+  padding-top:100px;
+}
+.slide1 {
+  background-color: #FEA900;
+  height: 100vh;
+}
+.slide2 {
+  background-color: #B3DC4A;
+}
+.slide3 {
+  background-color: #6AC0FF;
+}
