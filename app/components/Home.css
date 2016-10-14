@@ -1,8 +1,61 @@
 .container {
+  display: block;
+  min-width:100%;
+  height: 100vh;
+  background: url('../assets/images/background-home.png') no-repeat center center fixed; 
+  background-size: cover;
+}
+
+.headerAngle div {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size:1.5rem;
+  padding:1rem .5rem 1rem ;
+}
+
+.headerAngle div:first-child {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.5);
+  min-width: 4rem;
+  transform: skew(30deg);  /* SKEW */
+  left:-2rem;
   position: absolute;
-  top: 30%;
-  left: 10px;
-  text-align: center;
+}
+
+.headerAngle div:nth-child(2) {
+  margin-left: 3rem;
+}
+
+.navigationContainer {
+  left:55%;
+  position: absolute;  
+}
+
+.navigationLink   {
+  transform: skew(30deg);  /* SKEW */
+  background-color: #f36f4a;
+  margin: 1.5rem 0 0 0;
+  padding: .5rem;
+  display: inline-block;
+}
+
+.navigationLink  div {
+  display:block;
+  text-decoration:none;
+  padding:.15rem .5rem;
+  font-size:1.5rem;
+  transform: skew(-30deg); /* INVERSE SKEW */
+}
+
+.contentWedge{
+  shape-outside: polygon(0 0, 0% 100%, 60% 100%);
+  width: 30rem;
+  height: 30rem;
+  float:left;
+}
+
+.headline {
+  clear: left;
 }
 
 .container h2 {
@@ -13,4 +66,12 @@
   font-size: 1.4rem;
 }
 
-
+.productInformation {
+  position: absolute;
+  right: 27.5%;
+  bottom:.3%;
+  display: inline-block;
+  background-color: yellow;
+  min-width: 16%;
+  min-height: 2.5%;
+}

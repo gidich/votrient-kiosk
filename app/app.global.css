@@ -40,3 +40,14 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
+.black {
+  background-color: black;
+  display: inline-block;
+  margin:5rem;
+}
+.black a {
+  background-color: blue;
+  display: inline-block;
+  padding:3rem;
+}

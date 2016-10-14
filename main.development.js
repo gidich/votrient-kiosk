@@ -1,4 +1,4 @@
-import { app, BrowserWindow, Menu, shell } from 'electron';
+import { app, BrowserWindow, Menu, shell, globalShortcut } from 'electron';
 
 let menu;
 let template;
@@ -42,6 +42,22 @@ app.on('ready', async () => {
   });
 
   mainWindow.loadURL(`file://${__dirname}/app/app.html`);
+  console.log("registering global shortcuts");
+  globalShortcut.register('F11', () => {
+    mainWindow.setFullScreen(!mainWindow.isFullScreen());
+  });
+
+globalShortcut.register('Alt+Command+I', () => {
+    mainWindow.toggleDevTools();
+  });
+
+globalShortcut.register('Ctrl+R', () => {
+    mainWindow.webContents.reload();
+  });
+
+
+
+
 
   mainWindow.webContents.on('did-finish-load', () => {
     mainWindow.show();
@@ -65,7 +81,7 @@ app.on('ready', async () => {
       }]).popup(mainWindow);
     });
   }
-
+/*
   if (process.platform === 'darwin') {
     template = [{
       label: 'Electron',
@@ -265,4 +281,5 @@ app.on('ready', async () => {
     menu = Menu.buildFromTemplate(template);
     mainWindow.setMenu(menu);
   }
+ */ 
 });
