@@ -9,9 +9,6 @@ export default class Home extends Component {
   render() {
     return (
       <div className={styles.container}>
-
-        <div className={styles.headerAngle}><div>&nbsp;</div><div>In the first-line treatment of advanced RCC</div></div>
-
         <div>
           <div className={styles.navigationContainer}>
             <div className={styles.contentWedge}></div>
