@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, IndexRoute } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import App from './containers/App';
 import HomePage from './containers/HomePage';
 import CounterPage from './containers/CounterPage';
@@ -28,31 +28,33 @@ import Which from './components/Which';
 import Which2 from './components/Which2';
 
 export default (
-  <Route path="/" component={App}>
-    <IndexRoute component={HomePage} />
+  <Router history={browserHistory} >
+    <Route path="/" component={App}>
+      <IndexRoute component={HomePage} />
 
-    <Route path="/WhyStart" component={WhyStartPage} />
-    <Route path="/WhoIs" component={WhoIsPage} />
-    <Route path="/WhatIs" component={WhatIsPage} >
-      <IndexRoute component={WhatIs} />
-      <Route path="2" component={WhatIs2} />
-    </Route>
-    <Route path="/HowDoes" component={HowDoesPage}  >
-      <IndexRoute component={HowDoes} />
-      <Route path="2" component={HowDoes2} />
-      <Route path="3" component={HowDoes3} />
-      <Route path="4" component={HowDoes4} />
-    </Route>
-    <Route path="/Which" component={WhichPage} >
-      <IndexRoute component={Which} />
-      <Route path="2" component={Which2} />
-    </Route>
-    <Route path="/Why" component={WhyPage} />
-    <Route path="/ThankYou" component={ThankYouPage} />
-    <Route path="/Inactive" component={InactivePage} />
-    <Route path="/ProductInfo" component={ProductInfoPage} />
+      <Route path="/WhyStart" component={WhyStartPage} />
+      <Route path="/WhoIs" component={WhoIsPage} />
+      <Route path="/WhatIs" component={WhatIsPage} >
+        <IndexRoute component={WhatIs} />
+        <Route path="2" component={WhatIs2} />
+      </Route>
+      <Route path="/HowDoes" component={HowDoesPage}  >
+        <IndexRoute component={HowDoes} />
+        <Route path="2" component={HowDoes2} />
+        <Route path="3" component={HowDoes3} />
+        <Route path="4" component={HowDoes4} />
+      </Route>
+      <Route path="/Which" component={WhichPage} >
+        <IndexRoute component={Which} />
+        <Route path="2" component={Which2} />
+      </Route>
+      <Route path="/Why" component={WhyPage} />
+      <Route path="/ThankYou" component={ThankYouPage} />
+      <Route path="/Inactive" component={InactivePage} />
+      <Route path="/ProductInfo" component={ProductInfoPage} />
 
-    <Route path="/counter" component={CounterPage} />
-    <Route path="/moa" component={MoaPage} />
-  </Route>
+      <Route path="/counter" component={CounterPage} />
+      <Route path="/moa" component={MoaPage} />
+    </Route>
+  </Router>
 );

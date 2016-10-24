@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import WhatIs from '../components/WhatIs';
+import Timeout from '../components/Timeout';
+
 
 export default class WhatIsPage extends Component {
   render() {
     return (
-      <div>
+      <Timeout>
       {this.props.children}
-      </div>
+      </Timeout>
     );
   }
 }

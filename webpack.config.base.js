@@ -18,7 +18,12 @@ export default validate({
     {
         test: /\.png$/,
         loader: 'url'
-    }]
+    },
+    {
+        test: /\.otf$/,
+        loader: 'url'
+    }
+    ]
   },
 
   output: {

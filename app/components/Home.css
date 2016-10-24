@@ -6,6 +6,20 @@
   background-size: cover;
 }
 
+@font-face {
+  font-family: DinPro;
+  src: url('../assets/DINPro-CondRegular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: DinProStrong;
+  src: url('../assets/DINPro-CondBlack.otf') format('opentype');
+}
+
+
+
+
+
 .headerAngle div {
   margin-top: 1rem;
   display: inline-block;
@@ -32,12 +46,23 @@
 }
 
 .navigationLink   {
+  text-transform: uppercase;
+  font-family: DinPro;
   transform: skew(30deg);  /* SKEW */
   background-color: #f36f4a;
   margin: 1.5rem 0 0 0;
   padding: .5rem;
   display: inline-block;
 }
+.navigationLink strong {
+  font-family: DinProStrong;
+}
+.navigationLink img {
+    height: 1.5rem;
+    vertical-align: bottom;
+    margin-bottom: 0.2rem;
+}
+
 
 .navigationLink  div {
   display:block;
@@ -45,6 +70,7 @@
   padding:.15rem .5rem;
   font-size:1.5rem;
   transform: skew(-30deg); /* INVERSE SKEW */
+  vertical-align: middle; 
 }
 
 .contentWedge{
