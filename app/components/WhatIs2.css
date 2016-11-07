@@ -15,6 +15,17 @@
   min-height: 5.1%;
 }
 
+
+.back {
+  position: absolute;
+right: 25.2%;
+    top: 9.6%;
+  display: inline-block;
+    min-width: 7.5%;
+    min-height: 5.1%;
+  transform: skew(30deg);  /* SKEW */ 
+}
+
 .powerAhead {
   position: absolute;
   right: 11.5%;

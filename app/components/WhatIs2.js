@@ -7,6 +7,7 @@ export default class WhatIs2 extends Component {
     return (
       <div className={styles.container}>
           <Link to="/" className={styles.home}></Link>
+          <Link to="/WhatIs" className={styles.back}></Link>
           <Link to="/ThankYou" className={styles.powerAhead}></Link>
           <Link to="/ProductInfo" className={styles.productInformation}></Link>
       </div>

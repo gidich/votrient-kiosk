@@ -9,7 +9,7 @@ import IdleTimer from 'react-idle-timer';
 
   constructor(props) {
     super(props);
-    this.state = { timeout: 30 * 1000, idle: false, overlayShown : false };
+    this.state = { timeout: 90 * 1000, idle: false, overlayShown : false };
   } 
 
   onActive(){
@@ -20,7 +20,7 @@ import IdleTimer from 'react-idle-timer';
     this.setState({ idle: true });
     console.log(this.state);
     if(this.state.overlayShown === false){
-        this.setState({ overlayShown: true });
+        this.setState({timeout: 30 * 1000, overlayShown: true });
         this.refs.idleTimer.reset();
     }
     else{
@@ -31,7 +31,8 @@ import IdleTimer from 'react-idle-timer';
   }
   hideOverlay = () => {
       this.setState({ idle: false });
-      this.setState({ overlayShown: false });
+      this.setState({ timeout: 90 * 1000, overlayShown: false });
+      this.refs.idleTimer.reset();
   }
   render() {
     return (
