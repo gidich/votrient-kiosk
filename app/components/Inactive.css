@@ -25,3 +25,11 @@
   min-width: 15%;
   min-height: 2.5%;
 }
+.logo {
+  position: absolute;
+  right: 0%;
+  bottom:0%;
+  display: inline-block;
+  min-width: 13.5%;
+  min-height: 13.5%;
+}

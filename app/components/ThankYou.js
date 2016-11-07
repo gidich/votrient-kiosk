@@ -8,6 +8,7 @@ export default class ThankYou extends Component {
       <div className={styles.container}>
           <Link to="/" className={styles.home}></Link>
           <Link to="/ProductInfo" className={styles.productInformation}></Link>
+          <Link to="/" className={styles.logo}></Link>
       </div>
     );
   }

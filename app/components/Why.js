@@ -10,6 +10,7 @@ export default class Why extends Component {
           <Link to="/ThankYou" className={styles.powerAhead}></Link>
 
           <Link to="/ProductInfo" className={styles.productInformation}></Link>
+          <Link to="/" className={styles.logo}></Link>
       </div>
     );
   }

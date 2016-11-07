@@ -13,6 +13,7 @@ static propTypes = {
       <div className={styles.container}>
           <Link to="/" className={styles.home}></Link>
           <div className={styles.yes} onClick={stayOnPage}></div>
+          <Link to="/" className={styles.logo}></Link>
       </div>
     );
   }

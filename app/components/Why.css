@@ -32,3 +32,13 @@
   min-height: 5.1%;
   transform: skew(30deg);  /* SKEW */
 }
+
+
+.logo {
+  position: absolute;
+  right: 0%;
+  bottom:0%;
+  display: inline-block;
+  min-width: 13.5%;
+  min-height: 13.5%;
+}

@@ -10,6 +10,7 @@ export default class Which2 extends Component {
           <Link to="/Which" className={styles.back}></Link>
           <Link to="/ThankYou" className={styles.powerAhead}></Link>
           <Link to="/ProductInfo" className={styles.productInformation}></Link>
+          <Link to="/" className={styles.logo}></Link>
       </div>
     );
   }

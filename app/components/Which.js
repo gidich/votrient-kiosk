@@ -9,6 +9,7 @@ export default class Which extends Component {
           <Link to="/" className={styles.home}></Link>
           <Link to="/Which/2" className={styles.powerAhead}></Link>
           <Link to="/ProductInfo" className={styles.productInformation}></Link>
+          <Link to="/" className={styles.logo}></Link>
       </div>
     );
   }

@@ -7,6 +7,7 @@ export default class ProductInfo extends Component {
     return (
       <div className={styles.container}>
           <Link to="/" className={styles.home}></Link>
+          <Link to="/" className={styles.logo}></Link>
       </div>
     );
   }
