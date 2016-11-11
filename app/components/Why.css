@@ -14,6 +14,7 @@
   min-width: 6%;
   min-height: 5.1%;
 }
+
 .productInformation {
   position: absolute;
   right: 27.8%;
@@ -26,13 +27,13 @@
 .powerAhead {
   position: absolute;
   right: 30.1%;
-  top: 9.6%;
+  top: 10.4%;
   display: inline-block;
   min-width: 12.2%;
   min-height: 5.1%;
   transform: skew(30deg);  /* SKEW */
+  overflow: hidden;
 }
-
 
 .logo {
   position: absolute;
@@ -41,4 +42,46 @@
   display: inline-block;
   min-width: 13.5%;
   min-height: 13.5%;
+}
+
+.powerAhead div:after {  
+  animation: shine 5s ease-in-out  infinite;
+  animation-fill-mode: forwards;  
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0) 60%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+.powerAhead div:active:after {
+  opacity: 0;
+}
+
+@keyframes shine{
+  10% {
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    transition-duration: 1.7s, 1.7s, 4.15s;
+    transition-timing-function: ease;
+
+  }
+  100% {
+    opacity: 0;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+  }
 }

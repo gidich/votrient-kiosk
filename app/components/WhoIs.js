@@ -7,7 +7,7 @@ export default class WhoIs extends Component {
     return (
       <div className={styles.container}>
           <Link to="/" className={styles.home}></Link>
-          <Link to="/ThankYou" className={styles.powerAhead}></Link>
+          <Link to="/ThankYou" className={styles.powerAhead}><div /></Link>
           <Link to="/ProductInfo" className={styles.productInformation}></Link>
           <Link to="/" className={styles.logo}></Link>
       </div>
