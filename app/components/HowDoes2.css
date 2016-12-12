@@ -95,3 +95,21 @@
     transition-property: left, top, opacity;
   }
 }
+
+.references {
+    position: absolute;
+    left: 0%;
+    bottom: 2.5%;
+    display: inline-block;
+    min-width: 9.5%;
+    min-height: 4%;
+}
+
+.diagram {
+    position: absolute;
+    right: 0%;
+    top: 17.7%;
+    display: inline-block;
+    min-width: 15.5%;
+    min-height: 4.4%;
+}

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import HowDoes from '../components/HowDoes';
 import Timeout from '../components/Timeout';
 
 

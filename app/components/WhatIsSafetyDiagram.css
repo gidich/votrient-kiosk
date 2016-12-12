@@ -1,0 +1,16 @@
+.container {
+  display: block;
+  min-width:100%;
+  height: 100vh;
+  background: url('../assets/images/background-what-is-safety-diagram.png') no-repeat center center fixed; 
+  background-size: cover;
+}
+
+.close { 
+    position: absolute;
+    right: 2.2%;
+    top: 13.5%;
+    display: inline-block;
+    min-width: 4.5%;
+    min-height: 8%;
+}

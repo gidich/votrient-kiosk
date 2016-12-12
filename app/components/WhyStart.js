@@ -10,7 +10,9 @@ export default class WhyStart extends Component {
           <Link to="/ThankYou" className={styles.powerAhead}><div /></Link>
           <Link to="/ProductInfo" className={styles.productInformation}></Link>
           <Link to="/" className={styles.logo}></Link>
-      </div>
+          <Link to="/WhyStart/References" className={styles.references}></Link>
+          <Link to="/WhyStart/Diagram" className={styles.diagram}></Link>     
+     </div>
     );
   }
 }

@@ -11,6 +11,8 @@ export default class Which2 extends Component {
           <Link to="/ThankYou" className={styles.powerAhead}><div /></Link>
           <Link to="/ProductInfo" className={styles.productInformation}></Link>
           <Link to="/" className={styles.logo}></Link>
+          <Link to="/Which/References" className={styles.references}></Link>
+          <Link to="/Which/Diagram" className={styles.diagram}></Link>  
       </div>
     );
   }

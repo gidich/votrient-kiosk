@@ -10,6 +10,8 @@ export default class WhoIs extends Component {
           <Link to="/ThankYou" className={styles.powerAhead}><div /></Link>
           <Link to="/ProductInfo" className={styles.productInformation}></Link>
           <Link to="/" className={styles.logo}></Link>
+          <Link to="/WhoIs/References" className={styles.references}></Link>
+          <Link to="/WhoIs/Diagram" className={styles.diagram}></Link>          
       </div>
     );
   }

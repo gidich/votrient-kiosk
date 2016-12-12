@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import WhatIs from '../components/WhatIs';
 import Timeout from '../components/Timeout';
 
 

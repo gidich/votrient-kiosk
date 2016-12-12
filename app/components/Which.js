@@ -10,6 +10,8 @@ export default class Which extends Component {
           <Link to="/Which/2" className={styles.powerAhead}><div /></Link>
           <Link to="/ProductInfo" className={styles.productInformation}></Link>
           <Link to="/" className={styles.logo}></Link>
+          <Link to="/Which/References" className={styles.references}></Link>
+          <Link to="/Which/Diagram" className={styles.diagram}></Link>      
       </div>
     );
   }

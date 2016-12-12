@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import styles from './HowDoes4.css';
 
-export default class HowDoes extends Component {
+export default class HowDoes4 extends Component {
   render() {
     return (
       <div className={styles.container}>
@@ -11,6 +11,8 @@ export default class HowDoes extends Component {
           <Link to="/ThankYou" className={styles.powerAhead}><div /></Link>
           <Link to="/ProductInfo" className={styles.productInformation}></Link>
           <Link to="/" className={styles.logo}></Link>
+          <Link to="/HowDoes/References" className={styles.references}></Link>
+          <Link to="/HowDoes/4Diagram" className={styles.diagram}></Link>      
       </div>
     );
   }
