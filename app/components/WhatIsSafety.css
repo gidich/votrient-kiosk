@@ -96,6 +96,7 @@
 }
 
 .diagram {
+  background-color: yellow;
     position: absolute;
     right: 0%;
     top: 17.7%;

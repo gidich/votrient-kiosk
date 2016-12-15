@@ -43,7 +43,7 @@ import WhichDiagram from './components/WhichDiagram';
 import Which2 from './components/Which2';
 
 import WhatIsSafety from './components/WhatIsSafety';
-import WhatIsSafetyDiagram from './components/WhatIsSafetyDiagram';
+import WhatIsSafety2 from './components/WhatIsSafety2';
 
 import Why from './components/Why';
 
@@ -86,7 +86,7 @@ export default (
       </Route>
       <Route path="/WhatIsSafety" component={WhatIsSafetyPage}>
         <IndexRoute component={WhatIsSafety} />
-        <Route path="Diagram" component={WhatIsSafetyDiagram} />
+        <Route path="2" component={WhatIsSafety2} />
         <Route path="References" component={References} />
       </Route>      
       <Route path="/Which" component={WhichPage} >
